@@ -77,6 +77,7 @@ class TicTacToe
     else
       character == "O"
     end
+    return character
   end
 
 end
