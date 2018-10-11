@@ -80,7 +80,7 @@ class TicTacToe
     return character
   end
 
-  def won?(WIN_COMBINATIONS)
+  def won?
     WIN_COMBINATIONS.each do |check|
       win_index_1 = check[0]
       win_index_2 = check[1]
