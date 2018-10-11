@@ -74,7 +74,7 @@ class TicTacToe
     num_turns = turn_count
     if num_turns % 2 == 0
       character == "X"
-    else 
+    else
       character == "O"
     end
   end
