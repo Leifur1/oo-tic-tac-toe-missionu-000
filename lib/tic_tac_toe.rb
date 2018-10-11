@@ -80,4 +80,23 @@ class TicTacToe
     return character
   end
 
+  def won?(WIN_COMBINATIONS)
+    WIN_COMBINATIONS.each do |check|
+      win_index_1 = check[0]
+      win_index_2 = check[1]
+      win_index_3 = check[2]
+
+      position_1 = board[win_index_1]
+      position_2 = board[win_index_2]
+      position_3 = board[win_index_3]
+
+      if position_1 == "X" && position_2 == "X" && position_3 == "X"
+        return check
+      elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+        return check
+      end
+    end
+    return false
+  end
+
 end
