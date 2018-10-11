@@ -46,7 +46,7 @@ class TicTacToe
     end
   end
 
-  def turn(user_input, @board)
+  def turn(user_input)
     puts: "Please enter 1-9:"
     gets.chomp = user_input
     input_to_index(user_input)
@@ -58,7 +58,7 @@ class TicTacToe
     end
   end
 
-    
+
   def turn_count(@board)
   end
 
