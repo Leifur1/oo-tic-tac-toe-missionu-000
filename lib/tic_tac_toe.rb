@@ -128,7 +128,7 @@ class TicTacToe
     else
       if board[index[0]] == "X"
         return "X"
-      elsif board[index[0]] == "O"
+      else
         return "O"
       end
     end
