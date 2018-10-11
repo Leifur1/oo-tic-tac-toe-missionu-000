@@ -99,4 +99,13 @@ class TicTacToe
     return false
   end
 
+  def full?
+    @board.all? do |index| index == "X" || index == "O"
+      return true
+    else
+      return false
+    end
+  end
+  
+
 end
